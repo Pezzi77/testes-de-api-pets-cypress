@@ -131,7 +131,7 @@ Ao iniciar a aplicação, alguns usuários e pets já vêm pré-cadastrados em m
 | id | username | password |
 | --- | --- | --- |
 | 1 | `tiago` | `123456` |
-| 2 | `ricardo` | `456789` |
+| 2 | `felipe` | `123456` |
 
 As senhas são armazenadas no model em formato de hash usando `bcryptjs`, mas podem ser usadas em texto puro no login.
 
@@ -141,7 +141,7 @@ As senhas são armazenadas no model em formato de hash usando `bcryptjs`, mas po
 | --- | --- | --- | --- |
 | 1 | 1 | `Luke` | `Cão` |
 | 2 | 1 | `Maurício` | `Jabuti` |
-| 3 | 2 | `Pandora` | `Gato` |
+| 5 | 8 | `Caramelo` | `cão` |
 
 O campo `userId` indica a qual usuário cada pet pertence.
 
@@ -157,9 +157,8 @@ BASE_URL_REST=http://localhost:3000
 
 Comandos disponíveis:
 
-```powershell
-npm run test-rest-controller
-npm run test-rest-external
+```Git Bash 
+npm run start-rest
 ```
 
 Antes de executar os testes externos, suba a API REST.
